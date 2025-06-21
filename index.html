@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Enlaces | Nombre de Usuario</title>
+    
+    <!-- Tailwind CSS para un diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo para el fondo animado */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+        }
+
+        /* Animación del degradado del fondo */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Estilo para los botones con un ligero efecto de vidrio esmerilado */
+        .link-button {
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .link-button:hover {
+            transform: scale(1.03);
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md mx-auto p-4 text-center">
+        
+        <!-- Contenedor principal -->
+        <div class="flex flex-col items-center space-y-6">
+
+            <!-- Imagen de Perfil -->
+            <!-- CAMBIA 'src' por la URL de tu imagen de perfil -->
+            <img 
+                src="https://placehold.co/128x128/ffffff/333333?text=Tu+Foto" 
+                alt="Imagen de perfil" 
+                class="w-32 h-32 rounded-full border-4 border-white shadow-lg"
+                onerror="this.onerror=null;this.src='https://placehold.co/128x128/ffffff/333333?text=Error';"
+            >
+
+            <!-- Nombre y Descripción -->
+            <div class="text-white">
+                <!-- CAMBIA este texto por tu nombre de usuario o marca -->
+                <h1 class="text-2xl font-bold">@tu_usuario</h1>
+                <!-- CAMBIA este texto por una breve descripción -->
+                <p class="text-md mt-1">Creador de Contenido | Emprendedor</p>
+            </div>
+
+            <!-- Contenedor de Enlaces -->
+            <div class="w-full space-y-4">
+                
+                <!-- Enlace de Instagram -->
+                <!-- CAMBIA 'href' por la URL de tu perfil -->
+                <a href="#" target="_blank" class="link-button flex items-center justify-center p-4 w-full rounded-lg font-semibold text-lg">
+                    <i class="fab fa-instagram mr-3"></i>
+                    Instagram
+                </a>
+
+                <!-- Enlace de LinkedIn -->
+                <!-- CAMBIA 'href' por la URL de tu perfil -->
+                <a href="#" target="_blank" class="link-button flex items-center justify-center p-4 w-full rounded-lg font-semibold text-lg">
+                    <i class="fab fa-linkedin mr-3"></i>
+                    LinkedIn
+                </a>
+
+                <!-- Enlace de TikTok -->
+                <!-- CAMBIA 'href' por la URL de tu perfil -->
+                <a href="#" target="_blank" class="link-button flex items-center justify-center p-4 w-full rounded-lg font-semibold text-lg">
+                    <i class="fab fa-tiktok mr-3"></i>
+                    TikTok
+                </a>
+
+                <!-- Enlace de YouTube -->
+                <!-- CAMBIA 'href' por la URL de tu canal -->
+                <a href="#" target="_blank" class="link-button flex items-center justify-center p-4 w-full rounded-lg font-semibold text-lg">
+                    <i class="fab fa-youtube mr-3"></i>
+                    YouTube
+                </a>
+
+            </div>
+
+            <!-- Pie de página -->
+            <footer class="text-white text-sm opacity-75 mt-8">
+                Hecho con ❤️
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
